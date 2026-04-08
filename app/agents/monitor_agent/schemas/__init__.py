@@ -1,25 +1,9 @@
-"""Monitor agent schema bindings to the unified core contracts."""
+"""Schemas for monitor agent runtime and contracts."""
 
-from app.core.schemas import (
-    MonitorRunCreate,
-    MonitorRunDB,
-    MonitorRunView,
-    PaperDB,
-    PaperQueryHitCreate,
-    PaperQueryHitDB,
-    QueryTaskDB,
-    QueryTaskUpsert,
-    QueryTaskView,
+from app.agents.monitor_agent.schemas.monitor_run_runtime import (
+    MonitorRunResult,
+    PaperProcessResult,
+    RunOutcome,
 )
 
-__all__ = [
-    "MonitorRunCreate",
-    "MonitorRunDB",
-    "MonitorRunView",
-    "PaperDB",
-    "PaperQueryHitCreate",
-    "PaperQueryHitDB",
-    "QueryTaskDB",
-    "QueryTaskUpsert",
-    "QueryTaskView",
-]
+__all__ = ["RunOutcome", "PaperProcessResult", "MonitorRunResult"]
